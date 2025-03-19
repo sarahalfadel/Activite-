@@ -1,35 +1,35 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نشاط تفاعلي حول الذرة</title>
+    <title>لعبة ترتيب الإلكترونات</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h2>نشاط تفاعلي حول الذرة</h2>
-    <p class="instructions">🔹 قم بسحب الإلكترونات من المربع الأيسر وإفلاتها داخل المربع الأيمن. عند وضع العدد الصحيح من الإلكترونات، سيظهر اسم العنصر ومعلومات عنه.</p>
+    <h2>لعبة ترتيب الإلكترونات في المدارات</h2>
+    <p class="instructions">🔹 قم بسحب الإلكترونات وإفلاتها في المدار المناسب حول النواة. عند اكتمال العدد الصحيح، سيظهر اسم العنصر ومعلوماته.</p>
 
     <div class="container">
+        <!-- مربع الإلكترونات -->
         <div class="box">
             <h3>الإلكترونات</h3>
             <div id="electrons-container">
-                <!-- إلكترونات للسحب -->
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron1"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron2"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron3"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron4"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron5"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron6"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron7"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron8"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron9"></div>
-                <div class="electron" draggable="true" ondragstart="drag(event)" id="electron10"></div>
+                <!-- الكترونات قابلة للسحب -->
+                <div class="electron" draggable="true" ondragstart="drag(event)"></div>
+                <div class="electron" draggable="true" ondragstart="drag(event)"></div>
+                <div class="electron" draggable="true" ondragstart="drag(event)"></div>
+                <div class="electron" draggable="true" ondragstart="drag(event)"></div>
+                <div class="electron" draggable="true" ondragstart="drag(event)"></div>
+                <div class="electron" draggable="true" ondragstart="drag(event)"></div>
+                <div class="electron" draggable="true" ondragstart="drag(event)"></div>
+                <div class="electron" draggable="true" ondragstart="drag(event)"></div>
             </div>
         </div>
 
-        <div class="box" id="electron-box" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <!-- المدار حول النواة -->
+        <div class="atom" id="atom" ondragover="allowDrop(event)" ondrop="drop(event)">
             <div class="nucleus"></div>
         </div>
     </div>
