@@ -1,0 +1,108 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    direction: rtl;
+    background-color: #f4f4f9;
+}
+
+h2 {
+    color: #333;
+}
+
+.instructions {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #555;
+    background-color: white;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#electrons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.electron {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    cursor: grab;
+}
+
+.nucleus {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#element-info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #222;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    text-align: right;
+    width: 60%;
+    margin: 20px auto;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* تحسينات للموبايل */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #electrons-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .electron {
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+    }
+
+    #element-info {
+        width: 90%;
+        font-size: 16px;
+    }
+}
